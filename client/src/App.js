@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   const [selectedPost, setSelectedPost] = useState(null);
@@ -39,9 +41,12 @@ function App() {
 
   return (
     <div>
-      <h1>Welcome to the MERN App</h1>
-      <PostForm selectedPost={selectedPost} onSave={handleSave} />
-      <PostList onEdit={handleEdit} onDelete={handleDelete} />
+      <Header />
+      <div className="container">
+        <PostForm selectedPost={selectedPost} onSave={handleSave} />
+        <PostList onEdit={handleEdit} onDelete={handleDelete} />
+      </div>
+      <Footer />
     </div>
   );
 }

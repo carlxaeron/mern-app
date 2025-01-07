@@ -16,6 +16,12 @@ const postRoutes = require('./routes/postRoutes');
 // Use post routes
 app.use('/api', postRoutes);
 
+// Import home routes
+const homeRoutes = require('./routes/homeRoutes');
+
+// Use home routes
+app.use('/', homeRoutes);
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

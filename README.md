@@ -67,3 +67,13 @@ mern-app/
 - `GET /api/posts`: Retrieve all posts.
 - `PUT /api/posts/:id`: Update a post by ID.
 - `DELETE /api/posts/:id`: Delete a post by ID.
+
+### Updating the Home Page
+- The home page can be updated through the server side by modifying the `homeRoutes.js` file in the `server/routes` directory.
+- The `homeRoutes.js` file sends HTML content including the header, footer, and posts from the database.
+- To update the header, footer, or the content of the home page, edit the HTML content in the `homeRoutes.js` file.
+
+### Using Bootstrap in the Client Side
+- Bootstrap is used in the client side for styling.
+- The Bootstrap CSS file is imported in the `index.js` file in the `client/src` directory.
+- You can use Bootstrap classes in your React components to style them.
