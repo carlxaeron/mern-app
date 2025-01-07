@@ -36,9 +36,31 @@
    ```
    The React app will be running on `http://localhost:3000`.
 
+### Admin Setup
+1. Navigate to the `admin` directory:
+   ```sh
+   cd admin
+   ```
+2. Install the dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the admin React app:
+   ```sh
+   npm start
+   ```
+   The admin React app will be running on `http://localhost:3001`.
+
 ### Directory Structure
 ```
 mern-app/
+├── admin/
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
 ├── client/
 │   ├── public/
 │   │   └── index.html
@@ -48,6 +70,9 @@ mern-app/
 │   └── package.json
 ├── server/
 │   ├── routes/
+│   │   ├── adminRoutes.js
+│   │   ├── homeRoutes.js
+│   │   ├── postRoutes.js
 │   │   └── sampleRoute.js
 │   ├── server.js
 │   └── package.json
