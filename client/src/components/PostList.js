@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function PostList({ onEdit, onDelete }) {
+function PostList() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -18,8 +18,6 @@ function PostList({ onEdit, onDelete }) {
           <li key={post._id}>
             <h3>{post.title}</h3>
             <p>{post.content}</p>
-            <button onClick={() => onEdit(post)}>Edit</button>
-            <button onClick={() => onDelete(post._id)}>Delete</button>
           </li>
         ))}
       </ul>

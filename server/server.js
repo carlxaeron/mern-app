@@ -22,6 +22,12 @@ const homeRoutes = require('./routes/homeRoutes');
 // Use home routes
 app.use('/', homeRoutes);
 
+// Import admin routes
+const adminRoutes = require('./routes/adminRoutes');
+
+// Use admin routes
+app.use('/api', adminRoutes);
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
