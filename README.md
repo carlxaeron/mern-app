@@ -56,3 +56,14 @@ mern-app/
 
 ### Sample API Route
 - You can test the sample API route by navigating to `http://localhost:5000/api/sample` in your browser or using a tool like Postman.
+
+### CMS Client Instructions
+- To create a new post, fill out the form and click "Create".
+- To edit a post, click the "Edit" button next to the post, update the form, and click "Update".
+- To delete a post, click the "Delete" button next to the post.
+
+### Updated API Routes
+- `POST /api/posts`: Create a new post.
+- `GET /api/posts`: Retrieve all posts.
+- `PUT /api/posts/:id`: Update a post by ID.
+- `DELETE /api/posts/:id`: Delete a post by ID.
