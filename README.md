@@ -30,11 +30,21 @@
    ```sh
    npm install
    ```
-3. Start the React app:
+3. Start the Next.js app:
+   ```sh
+   npm run dev
+   ```
+   The Next.js app will be running on `http://localhost:3000`.
+
+4. Build the Next.js app:
+   ```sh
+   npm run build
+   ```
+
+5. Start the Next.js app in production mode:
    ```sh
    npm start
    ```
-   The React app will be running on `http://localhost:3000`.
 
 ### Admin Setup
 1. Navigate to the `admin` directory:
@@ -62,11 +72,13 @@ mern-app/
 │   │   └── index.js
 │   └── package.json
 ├── client/
-│   ├── public/
-│   │   └── index.html
-│   ├── src/
-│   │   ├── App.js
+│   ├── pages/
 │   │   └── index.js
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Header.js
+│   │   │   ├── Footer.js
+│   │   │   └── PostList.js
 │   └── package.json
 ├── server/
 │   ├── routes/
